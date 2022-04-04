@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__input {
+        height: 3rem;
+        background-color: rgb(245, 245, 245);
+        border-radius: 0.5rem;
+        padding: 3%;
+        color: darkgray;
+        width: 85%;
+    }
+    &__btn {
+        background-color: #0075ff;
+        &:disabled {
+            opacity: 0.5;
+            cursor: auto;
+            &:active {
+                transform: none;
+            }
+        }
+    }
+}

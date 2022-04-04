@@ -1,0 +1,15 @@
+<form class="form" action="#" (ngSubmit)="addItem()">
+    <input
+        #newItem
+        class="form__input"
+        type="text"
+        name="item title"
+        placeholder="Type something..."
+        [(ngModel)]="title"
+    />
+    <button class="form__btn btn" [disabled]="!title">
+        <svg viewBox="0 0 16 16">
+            <path d="M14 7V8H8V14H7V8H1V7H7V1H8V7H14Z" fill="#ffff" />
+        </svg>
+    </button>
+</form>
